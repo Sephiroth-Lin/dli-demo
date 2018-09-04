@@ -1,14 +1,14 @@
-## 华为云数据湖探索样例  
-指导用户如何使用数据湖探索
+## Huawei Cloud [Data Lake Insight](https://console.huaweicloud.com/dli) Examples  
+Guide users to use DLI better.  
 
-### Spark core样例  
-读取华为云OBS数据，然后做简单的数据预处理并写回OBS
+#### Spark Core  
+Reading from [OBS](https://storage.huaweicloud.com/obs), and do data preparation on DLI, then write back to OBS.  
 
-### Spark SQL样例  
-待补充
+#### Spark SQL  
+To be added.  
 
-### Spark Streaming样例  
-待补充
+#### Spark Streaming  
+To be added.  
 
-### Spark ML样例  
-读取华为云OBS数据，然后使用KMeans算法做聚类分析并写回计算结果到OBS
+#### Spark ML  
+Read Huawei Cloud OBS data, then use KMeans algorithm to do cluster analysis and write back the calculation results to OBS.  
