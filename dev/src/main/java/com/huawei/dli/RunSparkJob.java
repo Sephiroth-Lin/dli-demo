@@ -104,7 +104,6 @@ public class RunSparkJob {
   private static PackageResource uploadResource(String jarName, String bucketName, DLIClient client)
     throws DLIException {
     String jarPath = String.format("https://%s.obs.%s.myhwclouds.com/%s", bucketName, CONF.getRegion(), jarName);
-    // Ignore return value, if failed will throw exception
     return client.uploadResources("jar", new String[]{jarPath}, "This is test for sdk").get(0);
   }
 }
