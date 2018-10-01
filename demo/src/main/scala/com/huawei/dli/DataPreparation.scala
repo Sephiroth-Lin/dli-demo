@@ -1,4 +1,4 @@
-package com.huawei.demo
+package com.huawei.dli
 
 import org.apache.spark.sql.SparkSession
 

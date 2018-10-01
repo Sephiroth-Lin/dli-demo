@@ -1,4 +1,4 @@
-package com.huawei.demo
+package com.huawei.dli
 
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.mllib.clustering.KMeans
