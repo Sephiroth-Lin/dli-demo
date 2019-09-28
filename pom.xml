@@ -5,21 +5,22 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.huawei.dli</groupId>
-  <artifactId>huaweicloud-dli</artifactId>
+  <artifactId>huaweicloud-dli-demo</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0</version>
   <name>HuaweiCloud DLI Examples</name>
 
   <modules>
-    <module>demo</module>
-    <module>dev</module>
+    <module>spark-demo</module>
+    <module>sdk-demo</module>
   </modules>
 
   <properties>
     <scala.version>2.11.8</scala.version>
     <scala.binary.version>2.11</scala.binary.version>
-    <spark.version>2.1.0</spark.version>
-    <dli.sdk.version>1.1.3</dli.sdk.version>
+    <spark.version>2.3.2</spark.version>
+    <dli.sdk.version>1.1.6</dli.sdk.version>
+    <obs.sdk.version>3.0.2</obs.sdk.version>
   </properties>
 
   <dependencyManagement>
@@ -82,6 +83,28 @@
         <groupId>com.huaweicloud.dli</groupId>
         <artifactId>huaweicloud-dli-sdk-java</artifactId>
         <version>${dli.sdk.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.huawei.storage</groupId>
+            <artifactId>esdk-obs-java</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <!-- obs dependencies -->
+      <dependency>
+        <groupId>com.huawei.storage</groupId>
+        <artifactId>esdk-obs-java</artifactId>
+        <version>${obs.sdk.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
     </dependencies>
   </dependencyManagement>
