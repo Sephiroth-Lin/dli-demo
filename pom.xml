@@ -18,7 +18,7 @@
   <properties>
     <scala.version>2.11.8</scala.version>
     <scala.binary.version>2.11</scala.binary.version>
-    <spark.version>2.3.2</spark.version>
+    <spark.version>2.4.8</spark.version>
     <dli.sdk.version>1.1.6</dli.sdk.version>
     <obs.sdk.version>3.0.2</obs.sdk.version>
   </properties>
