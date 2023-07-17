@@ -16,7 +16,7 @@
   </modules>
 
   <properties>
-    <scala.version>2.11.8</scala.version>
+    <scala.version>2.11.12</scala.version>
     <scala.binary.version>2.11</scala.binary.version>
     <spark.version>2.3.2</spark.version>
     <dli.sdk.version>1.1.6</dli.sdk.version>
